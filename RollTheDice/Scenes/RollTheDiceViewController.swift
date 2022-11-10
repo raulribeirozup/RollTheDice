@@ -13,20 +13,23 @@ class RollTheDiceViewController: UIViewController {
     @IBOutlet weak var oldNumberLabel: UILabel!
     @IBOutlet weak var lastNumberLabel: UILabel!
     
-    var game = RollTheDice() {
+    var game: RollTheDice? {
         didSet {
+            guard isViewLoaded, let game = game else { return }
             updateView(for: game)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateView(for: game)
+        if let game = game {
+            updateView(for: game)
+        }
     }
     
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        game.execute()
+        game?.execute()
     }
     
     func updateView(for game: RollTheDice) {
