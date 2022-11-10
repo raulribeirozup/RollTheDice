@@ -13,7 +13,7 @@ class RollTheDiceViewController: UIViewController {
     @IBOutlet weak var oldNumberLabel: UILabel!
     @IBOutlet weak var lastNumberLabel: UILabel!
     
-    var game: RollTheDice = .init() {
+    var game = RollTheDice() {
         didSet {
             updateView(for: game)
         }
