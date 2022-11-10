@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		B7D3451A291D1ACF006AFB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D34519291D1ACF006AFB8D /* AppDelegate.swift */; };
 		B7D3451C291D1ACF006AFB8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3451B291D1ACF006AFB8D /* SceneDelegate.swift */; };
-		B7D3451E291D1ACF006AFB8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3451D291D1ACF006AFB8D /* ViewController.swift */; };
+		B7D3451E291D1ACF006AFB8D /* RollTheDiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3451D291D1ACF006AFB8D /* RollTheDiceViewController.swift */; };
 		B7D34521291D1ACF006AFB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3451F291D1ACF006AFB8D /* Main.storyboard */; };
 		B7D34523291D1AD1006AFB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D34522291D1AD1006AFB8D /* Assets.xcassets */; };
 		B7D34526291D1AD1006AFB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D34524291D1AD1006AFB8D /* LaunchScreen.storyboard */; };
+		B7D3452E291D2081006AFB8D /* RollTheDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3452D291D2081006AFB8D /* RollTheDice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7D34516291D1ACF006AFB8D /* RollTheDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollTheDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D34519291D1ACF006AFB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D3451B291D1ACF006AFB8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7D3451D291D1ACF006AFB8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7D3451D291D1ACF006AFB8D /* RollTheDiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTheDiceViewController.swift; sourceTree = "<group>"; };
 		B7D34520291D1ACF006AFB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7D34522291D1AD1006AFB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D34525291D1AD1006AFB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7D34527291D1AD1006AFB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D3452D291D2081006AFB8D /* RollTheDice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTheDice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		B7D34518291D1ACF006AFB8D /* RollTheDice */ = {
 			isa = PBXGroup;
 			children = (
+				B7D34531291D218E006AFB8D /* Supportive FIles */,
+				B7D34522291D1AD1006AFB8D /* Assets.xcassets */,
+				B7D3452F291D2173006AFB8D /* Models */,
+				B7D34532291D21A2006AFB8D /* Views */,
+				B7D34533291D21AE006AFB8D /* Scenes */,
+			);
+			path = RollTheDice;
+			sourceTree = "<group>";
+		};
+		B7D3452F291D2173006AFB8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3452D291D2081006AFB8D /* RollTheDice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7D34531291D218E006AFB8D /* Supportive FIles */ = {
+			isa = PBXGroup;
+			children = (
 				B7D34519291D1ACF006AFB8D /* AppDelegate.swift */,
 				B7D3451B291D1ACF006AFB8D /* SceneDelegate.swift */,
-				B7D3451D291D1ACF006AFB8D /* ViewController.swift */,
-				B7D3451F291D1ACF006AFB8D /* Main.storyboard */,
-				B7D34522291D1AD1006AFB8D /* Assets.xcassets */,
 				B7D34524291D1AD1006AFB8D /* LaunchScreen.storyboard */,
 				B7D34527291D1AD1006AFB8D /* Info.plist */,
 			);
-			path = RollTheDice;
+			name = "Supportive FIles";
+			sourceTree = "<group>";
+		};
+		B7D34532291D21A2006AFB8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3451F291D1ACF006AFB8D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7D34533291D21AE006AFB8D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3451D291D1ACF006AFB8D /* RollTheDiceViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D3451E291D1ACF006AFB8D /* ViewController.swift in Sources */,
+				B7D3451E291D1ACF006AFB8D /* RollTheDiceViewController.swift in Sources */,
 				B7D3451A291D1ACF006AFB8D /* AppDelegate.swift in Sources */,
 				B7D3451C291D1ACF006AFB8D /* SceneDelegate.swift in Sources */,
+				B7D3452E291D2081006AFB8D /* RollTheDice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
